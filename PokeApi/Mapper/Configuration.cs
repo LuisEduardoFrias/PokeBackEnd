@@ -22,7 +22,7 @@ namespace PokeApi.Mapper
                 .ForMember(d => d.abilities, a => a.MapFrom(a => a.abilities))
                 .ForMember(d => d.moves, a => a.MapFrom(a => a.moves))
                 .ForMember(d => d.types, a => a.MapFrom(a => a.types))
-                .ForMember(d => d.urlImage, a => a.MapFrom(a => a.sprites.front_default));
+                .ForMember(d => d.urlImage, a => a.MapFrom(a => a.sprites.versions.generationv.blackwhite.animated.front_default));
         }
     }
 }
